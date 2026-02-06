@@ -1,1 +1,1 @@
-This is my Github Homepage!
+Github Pages repo for my homepage and documentation!
