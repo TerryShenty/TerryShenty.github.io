@@ -2,28 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- 响应式适配：手机端自动缩放 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tianyu Shen - Personal Resume</title>
     <style>
-        /* 全局样式：复刻LaTeX article的基础风格 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Times New Roman', Times, serif; /* 贴近LaTeX的衬线字体 */
+            font-family: 'Times New Roman', Times, serif; 
         }
 
         body {
             font-size: 11pt;
-            line-height: 1.2; /* 单倍行距，对应LaTeX singlespacing */
-            max-width: 800px; /* 模拟A4纸宽度，网页更紧凑 */
-            margin: 2rem auto; /* 页面居中，上下留白 */
-            padding: 0 1rem; /* 左右留白，适配手机 */
+            line-height: 1.2; 
+            max-width: 800px; 
+            margin: 2rem auto; 
+            padding: 0 1rem; 
             color: #000;
         }
 
-        /* 超链接样式：和LaTeX hyperref一致，蓝色无下划线 */
         a {
             color: #0000ee;
             text-decoration: none;
@@ -33,13 +30,12 @@
             text-decoration: underline;
         }
 
-        /* 头部分栏：复刻LaTeX minipage + hfill */
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1rem;
-            flex-wrap: wrap; /* 手机端自动换行 */
+            flex-wrap: wrap; 
         }
 
         .header-left {
@@ -56,9 +52,8 @@
             font-weight: bold;
         }
 
-        /* Section样式：复刻LaTeX titleformat + titlerule */
         section {
-            margin: 0.625rem 0 0.375rem 0; /* 对应LaTeX titlespacing 10pt/6pt */
+            margin: 0.625rem 0 0.375rem 0; 
         }
 
         .section-title {
@@ -67,15 +62,13 @@
             display: block;
             margin-bottom: 0.25rem;
             padding-bottom: 0.125rem;
-            border-bottom: 1px solid #000; /* 下划线，对应LaTeX titlerule */
+            border-bottom: 1px solid #000; 
         }
 
-        /* 段落和间距：复刻LaTeX parskip 4pt */
         p {
             margin: 0.25rem 0;
         }
 
-        /* 列表样式：复刻LaTeX labelitemi -- + 缩进 */
         ul {
             list-style: none;
             margin-left: 1.2em;
@@ -88,7 +81,6 @@
             margin-left: -1.2em;
         }
 
-        /* 项目头部：机构+时间 左右对齐 */
         .item-header {
             font-weight: bold;
             display: flex;
@@ -96,12 +88,10 @@
             flex-wrap: wrap;
         }
 
-        /* 技能部分行间距：复刻LaTeX \\[5pt] */
         .skill-item {
             margin: 0.3125rem 0;
         }
 
-        /* 手机端适配：小屏幕下分栏堆叠，字体微调 */
         @media (max-width: 600px) {
             .header-left, .header-right {
                 flex: 0 0 100%;
@@ -118,12 +108,10 @@
     </style>
 </head>
 <body>
-    <!-- 头部：对应LaTeX Header -->
     <div class="header">
         <div class="header-left">
             <div class="name">Tianyu Shen</div>
-            <p style="margin-top: 0.5rem;"><a href="resume.pdf" target="_blank">Download PDF Resume</a></p> <!-- 新增这行 -->
-
+            <p style="margin-top: 0.5rem;"><a href="resume.pdf" target="_blank">Download PDF Resume</a></p> 
         </div>
         <div class="header-right">
             Email: <a href="mailto:tianyushen24@m.fudan.edu.cn">tianyushen24@m.fudan.edu.cn</a><br>
@@ -131,7 +119,6 @@
         </div>
     </div>
 
-    <!-- 教育经历：对应LaTeX Education -->
     <section>
         <span class="section-title">Education</span>
         <div class="item-header">Fudan University <span>Sep. 2024 -- Jun. 2028</span></div>
@@ -143,7 +130,6 @@
         <p>Prospective Exchange Student</p>
     </section>
 
-    <!-- 研究经历：对应LaTeX Research Experience -->
     <section>
         <span class="section-title">Research Experience</span>
         <div class="item-header">Big Data and Networking Group, Fudan University <span>Oct. 2025 -- Present</span></div>
@@ -167,7 +153,6 @@
         </ul>
     </section>
 
-    <!-- 奖项：对应LaTeX Awards -->
     <section>
         <span class="section-title">Awards</span>
         <ul>
@@ -177,7 +162,6 @@
         </ul>
     </section>
 
-    <!-- 技能：对应LaTeX Technical Skills -->
     <section>
         <span class="section-title">Technical Skills</span>
         <p class="skill-item"><b>Machine Learning:</b> Familiar with PyTorch for implementing and experimenting with neural network models.</p>
